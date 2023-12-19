@@ -20,7 +20,7 @@ const About = () => {
       <section className="mission-section" >
         <div className="section-content" data-aos="fade-up">
         
-        <img src="/images/aboutus.png" alt="Mission Image" className="mission-image" />
+        <img src="/images/aboutus.png" className="mission-image" />
           
         </div>
       </section>
