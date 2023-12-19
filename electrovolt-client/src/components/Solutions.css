@@ -1,0 +1,142 @@
+.solutions {
+  margin-bottom: 0;
+  padding: 40px;
+  /* margin-top: 70px; */
+  background-color: #000000;
+}
+
+
+.navigation1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.navigation1 a {
+  
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0 40px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 40px;
+}
+
+.navigation1 a:hover {
+  /* background-color: #847b7b; */
+  text-decoration: underline;
+}
+#energy-service{
+  padding: 0;
+}
+
+.charger-section {
+  margin-bottom: 50px;
+  /* padding: 0px; */
+  padding: 20px;
+}
+
+.intro {
+  text-align: left;
+  
+  padding: 20px;
+  
+  color: #fff;
+  background-color: #d7d0d0;
+}
+.intro h2 {
+  font-size: 75px;
+  /* margin-bottom: -80px; */
+  background-color: #d7d0d0;
+}
+.intro1 {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.fill-screen-image {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+}
+.fill-screen-image1 {
+  height: 670px;
+  width: 1000px;
+  background-size: contain;
+  background-position: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+}
+
+.text-content {
+  flex: 1; /* This will make the text take the remaining space */
+
+  font-size: 180px; 
+  color: #da2727;
+  
+  text-align: left; 
+ 
+
+}
+
+
+/* Additional styling for the "Energy as a service" text */
+
+
+/* Ensure text wraps properly on smaller screens */
+@media (max-width: 768px) {
+  .intro {
+    text-align: center;
+  }
+}
+
+h2{
+  font-size: 60px;
+}
+.fill-screen-image,
+.text-content {
+  opacity: 3; /* Start with opacity 0 */
+  transform: translateY(20px); /* Move the element down by 20px initially */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Set the transition properties */
+}
+
+.fill-screen-image[data-aos='fade-up'].aos-animate,
+.text-content[data-aos='fade-up'].aos-animate {
+  opacity: 1; /* Make the element fully opaque when animated */
+  transform: translateY(0); /* Reset the Y translation when animated */
+}
+
+
+.red-arrow-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.red-arrow-list div {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #fff; /* Set the text color to white */
+}
+
+.red-arrow-list div span {
+  margin-right: 8px;
+  color: #ff0000; /* Set the arrow color to red */
+}
+
+
+
+

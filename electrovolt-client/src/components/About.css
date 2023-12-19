@@ -1,0 +1,84 @@
+/* AboutUs.css */
+/* About.css */
+.about-us {
+    /* padding: 20px; */
+    /* margin-top: 70px; */
+    background-color: #000;
+  }
+  
+  .mission-section,
+  .founder-info-section {
+    background-color: #000;
+    color: #fff;
+  }
+  .mission-section h2,
+.founder-info-section h2 {
+  color: rgb(218, 15, 15);
+}
+.mission-section {
+    position: relative;
+  }
+  
+  .mission-image {
+    max-width: 100%; /* Set a maximum width for the image */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+  .red-arrow-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .red-arrow-list div {
+    margin-bottom: 15px;
+    font-size: 29px;
+    color: #fff; /* Set the text color to white */
+  }
+  
+  .red-arrow-list div span {
+    margin-right: 8px;
+    color: #ff0000; /* Set the arrow color to red */
+  }
+  .company-info-section {
+    /* background-color: #fff; */
+    color: #ffffff;
+    background-color: #000;
+  }
+  
+  .section-content1 {
+ 
+    max-width: 1750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+  }
+  .section-content2 {
+ 
+    max-width: 1750px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px;
+  }
+ 
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* About.css */
+
+
+  
+  .section-content {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: stretch;
+    max-width: 1750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  
+  
+  
