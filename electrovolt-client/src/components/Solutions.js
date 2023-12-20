@@ -1,7 +1,6 @@
 // Solutions.js
 import React,{useEffect} from 'react';
 import './Solutions.css';
-import Header from './Header';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
