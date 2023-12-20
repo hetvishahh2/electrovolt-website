@@ -24,11 +24,10 @@ const Footer = () => {
         </div>
         <div className="address">
           <p> 305, Third Floor, Centre Point, <br/> Opp. Bai Avabai  High <br/> School, Halar Road, <br/> Valsad- 396001,<br/>(Gujarat-India)</p>
+          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info@electrovolt.com</span></p>
         </div>
         <div className="customer-support">
-          {/* <p>Customer Support</p> */}
-          {/* <p>Phone: <span onClick={() => window.open('tel:+91 9687558299')}>+91 9687558299</span></p> */}
-          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info@electrovolt.com</span></p>
+          
         </div>
       </div>
     </footer>
