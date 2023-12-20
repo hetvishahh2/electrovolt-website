@@ -20,15 +20,15 @@ const About = () => {
       <section className="mission-section" >
         <div className="section-content" data-aos="fade-up">
         
-        <img src="/images/aboutus.png" className="mission-image" alt="" />
+        <img src="/images/aboutus.png" alt="Mission Image" className="mission-image" />
           
         </div>
       </section>
 
       <section className="company-info-section"  >
         <div className="section-content1" data-aos="fade-up" >
-          <h2>Electrovolt</h2>
-          <p>
+          <h2 className='hii'>Electrovolt</h2>
+          <p className='hii'>
           Electrovolt spearheads the electric vehicle revolution, 
           pioneering cutting-edge charging solutions tailored for a 
           diverse spectrum of electric vehicles, ranging from cars 
@@ -56,14 +56,14 @@ const About = () => {
         </div>
         <div className="section-content2" data-aos="fade-up">
         <div className="red-arrow-list">
-            <div>
+            <div className='hii'>
               <span>&rarr;</span> Real-time Availability: Access the current status of our charging stations in real-time through our user-friendly mobile app or website.
               </div>
             
-              <div>
+              <div className='hii'>
               <span>&rarr;</span> Priority Charging: Enjoy the convenience of priority reservations during peak hours with Electrovolt's specialized app.
               </div>
-              <div>
+              <div className='hii'>
               <span>&rarr;</span> Charging Station Locator: Easily locate the nearest Electrovolt charging station using our intuitive locator tool.
               </div>
           </div>
