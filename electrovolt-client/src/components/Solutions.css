@@ -5,7 +5,27 @@
   background-color: #000000;
 }
 
+@media screen and (max-width: 768px) {
+  .navigation1 a.hii{
+    font-size: 15px;
 
+  }
+  .charger-section1 h2.hii{
+    font-size: 25px;
+  }
+  .charger-section h2.hii{
+    font-size: 25px;
+  }
+  .charger-section p.hii{
+    font-size: 15px;
+  }
+  .charger-section div.hii{
+    font-size: 15px;
+  }
+  .section-content2 div.hii{
+    font-size: 15px;
+  }
+}
 .navigation1 {
   display: flex;
   justify-content: center;
@@ -136,6 +156,7 @@ h2{
   margin-right: 8px;
   color: #ff0000; /* Set the arrow color to red */
 }
+
 
 
 
