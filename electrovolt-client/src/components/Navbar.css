@@ -10,6 +10,10 @@
     z-index: 20;
     
   }
+.logo {
+    height: 50px;
+    border-radius: 5px;
+  }
   .nav-icon1{
     background-color: white;
     width:30px;
