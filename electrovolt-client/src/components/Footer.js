@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="column1">
-        <h2>Get in Touch Today</h2>
+        <h2 className='hii'>Get in Touch Today</h2>
         {/* <button onClick={() => window.open('tel:+91 9687558299')}>Call ElectroVolt</button> */}
         <div className="social-icons">
           <button onClick={() => window.open('https://www.linkedin.com/company/electrovolt-charging-solutions/')}><i className="fab fa-linkedin"></i></button>
