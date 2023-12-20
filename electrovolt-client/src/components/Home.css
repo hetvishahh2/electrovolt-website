@@ -1,5 +1,4 @@
 /* Home.css */
-
 .home {
   overflow-x: hidden;
 }
@@ -10,58 +9,83 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 2200px; /* Set the height to 100% of the viewport height */
-  width: 1800px;
+  min-height: 200vh;
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
 }
 
-.overlay-image {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 1300px; /* Adjust the width of the overlay image as needed */
-  height: 300px; /* Adjust the height of the overlay image as needed */
-}
+/* remove overlay image */
+
 .overlay-text2 {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 4.5%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  font-size: 80px; /* Adjust the font size as needed */
+  font-size: 80px;
   font-family:'Montserrat', sans-serif;
   
 }
 
-.strike-through {
-  text-decoration: line-through;
-  text-decoration-color: red;
-  font-style: italic;
+@media screen and (max-width: 768px) {
+  .overlay-text2 {
+    top: 20%;
+    /* left: 50%; Adjusted for centering on mobile */
+    transform: translate(-50%, -50%);
+    font-size: 40px; 
+  }
 }
+
 .overlay-text {
   position: absolute;
-  top: 900px; /* Adjusted to 100px from the bottom */
-  left: 20px; /* Adjusted to 70px from the left */
+  top: 800px;
+  left: 100px;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
 }
-.overlay-text h3{
-  position: relative;
-  right: 20px; /* Adjusted to 70px from the left */
-  -webkit-text-stroke: 2px #000; /* WebKit/Blink browsers */
-  text-stroke: 2px #000; /* Standard syntax */
-  color: white; /* Set the text color (fill) to white */
-  display: inline-block; /* Ensure the border surrounds the text content */
-  font-size: 60px
 
+@media screen and (max-width: 768px) {
+  .overlay-text {
+    /* bottom: 85%; 
+    left: 65%; */
+
+    top: 170%;
+    left:2%;
+    /* right: 40%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 10px;
+  }
 }
-.overlay-text li{
+
+.overlay-text h3 {
+  position: relative;
+  right: 20px; 
+  -webkit-text-stroke: 2px #000; 
+  text-stroke: 2px #000; 
+  color: white;
+  display: inline-block;
+  font-size: 60px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .overlay-text h3 {
+    font-size: 40px; 
+  }
+}
+
+.overlay-text li {
   font-size: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .overlay-text li {
+    font-size: 24px; 
+  }
 }
 
 .overlay-text ol {
@@ -70,15 +94,38 @@
   font-size: 44px;
 }
 
-/* .overlay-text p {
-  margin-top: 20px;
-  font-style: italic;
-  font-size: 22px;
-} */
+
+@media screen and (max-width: 768px) {
+  .overlay-text ol {
+    font-size: 30px; 
+  }
+}
+
 .overlay-text p.overlay-text1 {
-  margin-top: 20px; /* Adjust the margin-top as needed to move it downwards */
+  margin-top: 20px;
   font-style: italic;
   font-size: 22px;
   position: relative;
   top: 700px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .overlay-text p.overlay-text1 {
+    font-size: 16px; 
+    top: 15%; 
+    left: 15%;
+  }
+}
+
+.strike-through {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  font-style: italic;
+  display: inline-block;
+}
+.overlay-text:after {
+  content: "";
+  display: block;
+  height: 100px;
 }
