@@ -1,7 +1,6 @@
 // ContactUs.js
 import React, { useState,useEffect } from 'react';
 import './Contact.css'; // Create a corresponding CSS file
-import Footer from './Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
