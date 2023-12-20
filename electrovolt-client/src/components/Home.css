@@ -13,6 +13,7 @@
   width: 100%;
   margin: 0; 
   padding: 0; 
+  touch-action: none;
 }
 
 /* remove overlay image */
@@ -34,7 +35,7 @@
     top: 20%;
     /* left: 50%; Adjusted for centering on mobile */
     transform: translate(-50%, -50%);
-    font-size: 40px; 
+    font-size: 30px; 
   }
 }
 
