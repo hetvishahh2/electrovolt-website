@@ -1,4 +1,3 @@
-/* AboutUs.css */
 /* About.css */
 .about-us {
     /* padding: 20px; */
@@ -6,18 +5,34 @@
     background-color: #000;
   }
   
-  .mission-section,
-  .founder-info-section {
-    background-color: #000;
-    color: #fff;
+  @media screen and (max-width: 768px) {
+    .section-content1 p.hii{
+      font-size: 15px;
+    }
+    .section-content1 h2.hii{
+      font-size: 25px;
+    }
+    .section-content2 div.hii{
+      font-size: 15px;
+    }
   }
-  .mission-section h2,
-.founder-info-section h2 {
-  color: rgb(218, 15, 15);
-}
-.mission-section {
-    position: relative;
+  /* .section-content {
+    display: flex;
+    justify-content: space-around; 
+    align-items: stretch;
+    max-width: 1750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+  } */
+  .section-content {
+    max-width: 1750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    font-size: 16px; /* Add a default font size */
   }
+  
   
   .mission-image {
     max-width: 100%; /* Set a maximum width for the image */
@@ -32,7 +47,6 @@
   
   .red-arrow-list div {
     margin-bottom: 15px;
-    font-size: 29px;
     color: #fff; /* Set the text color to white */
   }
   
@@ -44,8 +58,9 @@
     /* background-color: #fff; */
     color: #ffffff;
     background-color: #000;
+    font-size: 12px;
   }
-  
+ 
   .section-content1 {
  
     max-width: 1750px;
@@ -64,21 +79,3 @@
   h2 {
     margin-bottom: 20px;
   }
-  
-  /* About.css */
-
-
-  
-  .section-content {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    align-items: stretch;
-    max-width: 1750px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-  }
-  
-  
-  
-  
