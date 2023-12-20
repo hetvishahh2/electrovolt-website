@@ -13,7 +13,7 @@ const Contact = () => {
     });
   }, []);
 
-  const [showDialog, setShowDialog] = useState(true);
+  const [showDialog] = useState(true);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
