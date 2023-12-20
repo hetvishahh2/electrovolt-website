@@ -97,6 +97,7 @@
   .nav-icon {
     display: none;
     color: #000000;
+    background-color: #fff;
   }
   
   .nav-icon .icon {
