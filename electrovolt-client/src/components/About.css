@@ -16,15 +16,7 @@
       font-size: 15px;
     }
   }
-  /* .section-content {
-    display: flex;
-    justify-content: space-around; 
-    align-items: stretch;
-    max-width: 1750px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-  } */
+  
   .section-content {
     max-width: 1750px;
     margin: 0 auto;
@@ -79,3 +71,5 @@
   h2 {
     margin-bottom: 20px;
   }
+  
+ 
