@@ -74,9 +74,13 @@
   height: 100vh;
   background-size: cover;
   background-position: center;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
+  max-width: 100%; /* Set a maximum width for the image */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-top: 20px;
   
 }
 
@@ -97,19 +101,6 @@
 
 h2 {
   font-size: 40px; /* Adjust font size for better display on mobile */
-}
-
-.fill-screen-image,
-.text-content {
-  opacity: 3;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fill-screen-image[data-aos='fade-up'].aos-animate,
-.text-content[data-aos='fade-up'].aos-animate {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .red-arrow-list {
