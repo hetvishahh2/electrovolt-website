@@ -42,7 +42,7 @@ const Solutions = () => {
         <section id="car-charger" className="mission-section" >
         <div className="section-content" data-aos="fade-up">
         <h2 className='hii1'>Car Charger</h2>
-        <img src="/images/CAR.png" alt="" className="mission-image" />
+        <img src="/images/CAR.png" loading="lazy" alt="" className="mission-image" />
           
         </div>
       </section>
@@ -88,7 +88,7 @@ const Solutions = () => {
       <section id="bus-charger" className="mission-section" >
         <div className="section-content" data-aos="fade-up">
         <h2 className='hii1'>Bus Charger</h2>
-        <img src="/images/BUS2.png" alt="" className="mission-image" />
+        <img src="/images/BUS2.png" loading="lazy" alt="" className="mission-image" />
           
         </div>
       </section>
@@ -121,7 +121,7 @@ const Solutions = () => {
       <section id="truck-charger" className="mission-section" >
         <div className="section-content" data-aos="fade-up">
         <h2 className='hii'>Truck Charger</h2>
-        <img src="/images/TRUCK.png" alt="" className="mission-image" />
+        <img src="/images/TRUCK.png" loading="lazy" alt="" className="mission-image" />
           
         </div>
       </section>
