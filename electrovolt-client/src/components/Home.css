@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 768px) {
   .overlay-text1 {
-    top: calc(60% + 40px); /* Adjust the top position for mobile screens */
+    top: calc(70% + 40px); /* Adjust the top position for mobile screens */
     font-size: 10px; /* Adjust the font size for mobile screens */
   }
 }
