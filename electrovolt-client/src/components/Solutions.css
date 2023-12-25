@@ -11,11 +11,10 @@
     font-size: 15px;
   }
   
-  .charger-section p.hii1,
   .charger-section div.hii1,
   .section-content3 div.hii1,
   .section-content4 div.hii1 {
-    font-size: 15px;
+    font-size: 30px;
   }
   .section-content4 div.hii1{
     font-size: 20px;
@@ -34,7 +33,7 @@
   margin: 0 auto;
   text-align: left;
   padding: 40px;
-  font-size: 19px; /* Add a default font size */
+  font-size: 39px; /* Add a default font size */
 }
 .section-content4 {
 
