@@ -58,18 +58,12 @@ const Contact = () => {
 <div className="contact-us" >
       <div className="contact-info" data-aos="fade-right">
       <h2>Contact Information</h2>
-        {/* <img
-            className="imgdets"
-            src="/images/contactus.jpg" 
-            alt="Contact Image"
-          /> */}
-       {/* <h3>Address: </h3> */}
+        
         <p>
-          Address:<br/> <br/>Electrovolt, 305, Third Floor, <br />
-          Centre Point, Opp. Bai <br />
-          Avabai High School, 396001<br />
+          Address:<br/> <br/> Electrovolt Charging Solutions, <br/> 305, Third Floor, Centre  <br />
+          Point, Opp. Bai Avabai <br />
+          High School, 396001<br />
           Valsad, Gujarat, India<br />
-          {/* Phone: +91 9687558299<br /> */}
           <div className="mail-box">
             <br/>
                     Email: <p>info_hub@electrovolt.in</p>
