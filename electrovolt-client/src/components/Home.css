@@ -11,10 +11,7 @@
    overflow-y: auto;
 }
 }
-.body {
-  overflow-x: hidden;
-  background-color: black;
-}
+
 
 .background {
   position: relative;
