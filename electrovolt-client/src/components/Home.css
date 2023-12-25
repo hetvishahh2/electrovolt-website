@@ -3,8 +3,9 @@
 
 @media screen and (max-width: 768px) {
 .body {
+  overflow-x: hidden;
   background-color: black;
-   overflow-y: auto;
+  overflow-y: auto;
 }
 }
 
@@ -18,7 +19,6 @@
   width: 100%;
   margin: 0; 
   padding: 0; 
-  touch-action: none;
 }
 
 /* remove overlay image */
