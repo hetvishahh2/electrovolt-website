@@ -1,5 +1,8 @@
 /* Home.css */
 
+.home {
+  overflow-x: hidden;
+}
 
 @media screen and (max-width: 768px) {
 .body {
@@ -9,7 +12,22 @@
 }
 }
 
+.overlay-text1 {
+  position: absolute;
+  top: calc(160% + 155px); /* Adjust the top position accordingly */
+  left: 2%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 24px; /* Adjust the font size accordingly */
+}
 
+@media screen and (max-width: 768px) {
+  .overlay-text1 {
+    top: calc(60% + 40px); /* Adjust the top position for mobile screens */
+    font-size: 10px; /* Adjust the font size for mobile screens */
+  }
+}
 .background {
   position: relative;
   background-size: cover;
