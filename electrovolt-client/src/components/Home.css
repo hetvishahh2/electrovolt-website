@@ -133,7 +133,7 @@ body {
 @media screen and (max-width: 1678px) {
   .overlay-text1 {
     font-size: 18px;
-    top: 190%;
+    top: 200%;
     left: 2%;
     transform: translate(-50%, -50%);
   }
