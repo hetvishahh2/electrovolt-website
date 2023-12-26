@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="address">
           <p> Electrovolt Charging Solutions, <br/> 305, Third Floor, Centre Point, <br/> Opp. Bai Avabai  High <br/> School, Halar Road, <br/> Valsad- 396001,<br/>(Gujarat-India)</p>
-          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info_hub@electrovolt.com</span></p>
+          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info_hub@electrovolt.in </span></p>
         </div>
         <div className="customer-support">
           
