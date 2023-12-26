@@ -10,7 +10,7 @@
       font-size: 15px;
     }
     .section-content1 h2.hii{
-      font-size: 25px;
+      font-size: 35px;
     }
     .section-content2 div.hii{
       font-size: 15px;
@@ -27,14 +27,15 @@
   
   
   .mission-image {
-    max-width: 100%; /* Set a maximum width for the image */
-    display: block; /* Center the image horizontally */
-    margin: 0 auto; /* Center the image horizontally */
-    margin-top: 20px; /* Add some top margin for spacing */
+    max-width: 100%; 
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 20px;
   }
   .red-arrow-list {
     list-style-type: none;
     padding: 0;
+    font-size: 22px;
   }
   
   .red-arrow-list div {
@@ -50,7 +51,7 @@
     /* background-color: #fff; */
     color: #ffffff;
     background-color: #000;
-    font-size: 12px;
+    font-size: 36px;
   }
  
   .section-content1 {
@@ -66,10 +67,18 @@
     margin: 0 auto;
     text-align: left;
     padding: 40px;
+    
   }
  
   h2 {
     margin-bottom: 20px;
   }
   
+  /* About.css */
+
+
+  
  
+  
+  
+  
