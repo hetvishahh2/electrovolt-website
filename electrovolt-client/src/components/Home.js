@@ -18,7 +18,7 @@ const Home = () => {
     <div>
     
         <div className="home">
-          <div className="background" style={{ backgroundImage: `url("/images/homepage.png")` }} ></div>
+          <div className="background" style={{ backgroundImage: `url("/images/homepage.png")` , loading: 'lazy' }} ></div>
               <div className="overlay-text2" data-aos="fade-up">
                 <span className="strike-through" >Largest</span> Accurately Located <br/> India's <span className="strike-through">Fastest Growing</span> EV Charging Network 
               </div>
