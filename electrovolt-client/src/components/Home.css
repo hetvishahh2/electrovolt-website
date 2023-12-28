@@ -29,6 +29,7 @@ body {
     width: 100%;
   transform: translate(-50%, -50%);
   text-align: center;
+  text-shadow: 4px 2px black;
   color: white;
   font-size: 60px;
   font-family: 'Montserrat', sans-serif;
@@ -39,6 +40,7 @@ body {
     top: 20%;
     /* right: 10%; */
     transform: translate(-50%, -50%);
+    text-shadow: 4px 2px black;
     font-size: 27px;
   }
 
