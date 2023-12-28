@@ -51,7 +51,7 @@ body {
 
 .overlay-text {
   position: absolute;
-    top: 75%;
+    top: 74%;
     left: 0;
     width: 100%;
   transform: translate(-50%, -50%);
