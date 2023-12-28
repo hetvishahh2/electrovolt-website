@@ -10,8 +10,8 @@ const Footer = () => {
         {/* <button onClick={() => window.open('tel:+91 9687558299')}>Call ElectroVolt</button> */}
         <div className="social-icons">
           <button onClick={() => window.open('https://www.linkedin.com/company/electrovolt-charging-solutions/')}><i className="fab fa-linkedin"></i></button>
-          <button ><i className="fab fa-twitter"></i></button>
-          <button ><i className="fab fa-facebook"></i></button>
+          <button onClick={() => window.open('https://twitter.com/Electrovolt_in/')}><i className="fab fa-twitter"></i></button>
+          <button onClick={() => window.open('https://www.facebook.com/profile.php?id=61554870364546/')}><i className="fab fa-facebook"></i></button>
           <button onClick={() => window.open('https://www.instagram.com/electrovolt.in?igshid=MmVlMjlkMTBhMg==')}><i className="fab fa-instagram"></i></button>
         </div>
       </div>
@@ -23,8 +23,8 @@ const Footer = () => {
             </Link>
         </div>
         <div className="address">
-          <p> Electrovolt Charging Solutions, <br/> 305, Third Floor, Centre Point, <br/> Opp. Bai Avabai  High <br/> School, Halar Road, <br/> Valsad- 396001,<br/>(Gujarat-India)</p>
-          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info_hub@electrovolt.in </span></p>
+          <p> Electrovolt Charging Solutions, <br/>305, Third Floor, Centre Point, <br/> Opp. Bai Avabai  High <br/> School, Halar Road, <br/> Valsad- 396001,<br/>(Gujarat-India)</p>
+          <p>Email: <span onClick={() => window.open('mailto:info@electrovolt.com')}>info@electrovolt.in</span></p>
         </div>
         <div className="customer-support">
           
