@@ -62,8 +62,8 @@ const Contact = () => {
         <p>
           Address:<br/> <br/> Electrovolt Charging Solutions, <br/> 305, Third Floor, Centre  <br />
           Point, Opp. Bai Avabai <br />
-          High School, 396001<br />
-          Valsad, Gujarat, India<br />
+          High School, Valsad,<br />
+          396001, Gujarat, India<br />
           <div className="mail-box">
             <br/>
                     Email: <p>info_hub@electrovolt.in</p>
