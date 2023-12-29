@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'build'))); 
+// app.use(express.static(path.join(__dirname, 'build'))); 
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -24,9 +24,9 @@ const transporter = nodemailer.createTransport({
 app.get('/', (req, res) => {
     res.send('Hello, this is the home page!');
   });
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// });
 
 
 app.post('/send-email', (req, res) => {
