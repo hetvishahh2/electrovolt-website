@@ -11,14 +11,13 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const customDirname = path.dirname("");  // Use a different variable name
 const buildPath = path.join(customDirname, "../electrovolt-client/build");
 
 app.use(express.static(buildPath));
 
 app.get("/*", function(req, res){
     res.sendFile(
-        path.join(customDirname, "../electrovolt-client/build/index.html"),
+        path.join(buildPath, "../electrovolt-client/build/index.html"),
         function (err) {
           if (err) {
             res.status(500).send(err);
