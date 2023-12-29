@@ -2,7 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-require('dotenv').config();
+// require('dotenv').config();
 
 
 const app = express();
@@ -16,8 +16,8 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: process.env.EMAIL_USER, 
-    pass: process.env.EMAIL_PASSWORD, 
+    user: '.message_hub@electrovolt.in', 
+    pass: 'mkqtfasmgmnlldow', 
   },
 });
 
@@ -35,7 +35,8 @@ app.post('/send-email', (req, res) => {
 
         const mailOptions = {
             from: 'message_hub@electrovolt.in', 
-            to: 'info_hub@electrovolt.in', 
+            to:  'hetvishah970@gmail.com',
+            // 'info_hub@electrovolt.in',
             subject: `Subject: ${subject}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
         };
