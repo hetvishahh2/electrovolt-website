@@ -35,8 +35,7 @@ app.post('/send-email', (req, res) => {
 
         const mailOptions = {
             from: 'message_hub@electrovolt.in', 
-            to:  'hetvishah970@gmail.com',
-            // 'info_hub@electrovolt.in',
+            to:  'info_hub@electrovolt.in',
             subject: `Subject: ${subject}`,
             text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
         };
