@@ -2,6 +2,7 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config();
 
 
 const app = express();
@@ -10,18 +11,22 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'build'))); 
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'message_hub@electrovolt.in', 
-    pass: 'mkqtfasmgmnlldow', 
+    user: process.env.EMAIL_USER, 
+    pass: process.env.EMAIL_PASSWORD, 
   },
 });
 
 app.get('/', (req, res) => {
     res.send('Hello, this is the home page!');
   });
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 
 app.post('/send-email', (req, res) => {
