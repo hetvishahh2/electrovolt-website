@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: '.message_hub@electrovolt.in', 
+    user: 'message_hub@electrovolt.in', 
     pass: 'mkqtfasmgmnlldow', 
   },
 });
