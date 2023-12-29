@@ -12,8 +12,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // app.use(express.static(path.join(__dirname, 'build'))); 
-const _dirname = path.dirname("")
-const buildPath = path.join(_dirname  , "../electrovolt-client/build");
+const __dirname = path.dirname("")
+const buildPath = path.join(__dirname  , "../electrovolt-client/build");
 
 app.use(express.static(buildPath))
 
