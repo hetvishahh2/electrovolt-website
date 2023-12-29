@@ -12,6 +12,23 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // app.use(express.static(path.join(__dirname, 'build'))); 
+const _dirname = path.dirname("")
+const buildPath = path.join(_dirname  , "../electrovolt-client/build");
+
+app.use(express.static(buildPath))
+
+app.get("/*", function(req, res){
+
+    res.sendFile(
+        path.join(__dirname, "../electrovolt-client/build/index.html"),
+        function (err) {
+          if (err) {
+            res.status(500).send(err);
+          }
+        }
+      );
+
+})
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
