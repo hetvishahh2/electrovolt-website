@@ -20,7 +20,7 @@ app.use(express.static(buildPath))
 app.get("/*", function(req, res){
 
     res.sendFile(
-        path.join(__dirname, "../electrovolt-client/build/index.html"),
+        path.join(__dirname, "../electrovolt-client/src/components/index.html"),
         function (err) {
           if (err) {
             res.status(500).send(err);
