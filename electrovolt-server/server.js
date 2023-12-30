@@ -1,31 +1,34 @@
+require("dotenv").config();
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
+const path = require('path')
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const buildPath = path.join(__dirname, "../electrovolt-client/build");
+// const _dirname = path.dirname("")
+const buildPath = path.join(__dirname  , "../electrovolt-client/build");
 
-app.use(express.static(buildPath));
+app.use(express.static(buildPath))
 
 app.get("/*", function(req, res){
+
     res.sendFile(
-        path.join(buildPath, "../electrovolt-client/build/index.html"),
+        path.join(__dirname, "../electrovolt-client/build/index.html"),
         function (err) {
           if (err) {
             res.status(500).send(err);
           }
         }
-    );
-});
+      );
 
+})
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
@@ -36,7 +39,9 @@ const transporter = nodemailer.createTransport({
 
 app.get('/', (req, res) => {
     res.send('Hello, this is the home page!');
-});
+  });
+
+
 
 app.post('/send-email', (req, res) => {
     try{
@@ -51,17 +56,19 @@ app.post('/send-email', (req, res) => {
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.error(error);
-                res.status(500).send('Internal Server Error');
+            console.error(error);
+            res.status(500).send('Internal Server Error');
             } else {
-                console.log('Email sent: ' + info.response);
-                res.status(200).send('Email sent successfully');
+            console.log('Email sent: ' + info.response);
+            res.status(200).send('Email sent successfully');
             }
         });
-    } catch (error) {
+    }
+    catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Internal Server Error' });
-    }
+      }
+  
 });
 
 app.listen(PORT, () => {
